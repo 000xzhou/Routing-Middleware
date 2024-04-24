@@ -52,7 +52,7 @@ router.patch("/:name", function (req, res, next) {
     if (req.body.price) {
       findItem.price = req.body.price;
     }
-    return res.json({ added: findItem });
+    return res.json({ updated: findItem });
   } catch (error) {
     next(error);
   }
